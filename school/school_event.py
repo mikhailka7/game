@@ -13,10 +13,10 @@ def start_school():
     else:
         print(f'из оружий у тебя только {inventory["weapon"]}')
     while True:
-        csm = randint(0, 2)
+        csm = randint(0, 1)
         r_th = randint(0,4)
         if input(f"ты видешь {one_floor_res[r_th]} хочешь обыскать (да/нет)") == 'да':
-            if csm == 2:
+            if csm == 1:
                 print("на тебя нападает монстр")
                 if inventory["weapon"] != []:
                     print("ты убил монстра, можешь дальше продолжать искать ресурсы")
